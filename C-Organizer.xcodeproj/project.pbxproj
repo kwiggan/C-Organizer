@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2E9CDEC2379CBF200A7340F /* AmarachiStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E9CDEB2379CBF200A7340F /* AmarachiStoryboard.storyboard */; };
 		CFBA9121237309A300A41058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBA9120237309A300A41058 /* AppDelegate.swift */; };
 		CFBA9123237309A300A41058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBA9122237309A300A41058 /* ViewController.swift */; };
 		CFBA9126237309A300A41058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBA9124237309A300A41058 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A2E9CDEB2379CBF200A7340F /* AmarachiStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AmarachiStoryboard.storyboard; sourceTree = "<group>"; };
 		CFBA911D237309A300A41058 /* C-Organizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C-Organizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBA9120237309A300A41058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFBA9122237309A300A41058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				CFBA9120237309A300A41058 /* AppDelegate.swift */,
 				CFBA9122237309A300A41058 /* ViewController.swift */,
 				CFBA9124237309A300A41058 /* Main.storyboard */,
+				A2E9CDEB2379CBF200A7340F /* AmarachiStoryboard.storyboard */,
 				CFBA912A237309A500A41058 /* Assets.xcassets */,
 				CFBA912C237309A500A41058 /* LaunchScreen.storyboard */,
 				CFBA912F237309A500A41058 /* Info.plist */,
@@ -128,6 +131,7 @@
 				CFBA912E237309A500A41058 /* LaunchScreen.storyboard in Resources */,
 				CFBA912B237309A500A41058 /* Assets.xcassets in Resources */,
 				CFBA9126237309A300A41058 /* Main.storyboard in Resources */,
+				A2E9CDEC2379CBF200A7340F /* AmarachiStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
