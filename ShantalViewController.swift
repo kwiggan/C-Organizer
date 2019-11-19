@@ -19,7 +19,7 @@ class ShantalViewController: UIViewController {
             
             //Configure the button
             button = dropDownBtn.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-            button.setTitle("Choose Class", for: .normal)
+            button.setTitle("Select Class", for: .normal)
             button.translatesAutoresizingMaskIntoConstraints = false
             
             //Add Button to the View Controller
