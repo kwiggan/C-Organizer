@@ -10,7 +10,7 @@ import UIKit
 
 class AllNamesViewController: UIViewController {
 
-//    var sNames = ["Shantal Ewell", "Keneisha Wiggan", "Amarachi Kalu-Onuma", "Ikenna Brown", "Ruby Birchiet"]
+//Struc to hold all students names
     var students = [
         Student("Shantal Ewell"),
         Student("Keneisha Wiggan"),
@@ -19,10 +19,13 @@ class AllNamesViewController: UIViewController {
         Student("Ruby Birchiet")
     ]
     
-   // let test = Array(sNames.filter { !" \n\t\r".contains($0) })
     
-   
+//    for char in students {
+//
+//    }
+   // let test = Array(sNames.filter { !" \n\t\r".contains($0) })
     @IBOutlet weak var averageLabel: UILabel!
+    let backgroundImageView = UIImageView()
     
     var sum = 0
     var segue = ""
@@ -35,6 +38,7 @@ class AllNamesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBackground()
         averageLabel.isHidden = true
         
         switch segue{
@@ -47,12 +51,11 @@ class AllNamesViewController: UIViewController {
                     }
                 }
             }
-            
-            
             case "total":
                  topicLabel.text = "Total Character in Names"
                 for student in students {
-                    let charCount = student.name.count
+                    //counting char without white spaces
+                    let charCount = (String(student.name.filter {!" ".contains($0)})).count
                     sum = charCount
                     print("The total character in \(student.name) is \(sum)")
                 }
@@ -72,6 +75,20 @@ class AllNamesViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
+    
+    
+    func setBackground() {
+           view.addSubview(backgroundImageView)
+           backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+           backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+           backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+           backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+           backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+
+           backgroundImageView.image = UIImage (named: "background4")
+
+           view.sendSubviewToBack(backgroundImageView)
+       }
 
 }
 
@@ -89,7 +106,7 @@ extension AllNamesViewController: UITableViewDelegate, UITableViewDataSource{
         }
         
         if segue == "total" {
-            cell.totalChars.text = "Total char: \(students[indexPath.row].length)"
+            cell.totalChars.text = "Total char: \((String(students[indexPath.row].name.filter {!" ".contains($0)})).count)"
         }else {
             cell.totalChars.isHidden = true
         }
