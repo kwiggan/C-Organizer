@@ -11,15 +11,17 @@ import UIKit
 class ShantalViewController: UIViewController {
     
     var button = dropDownBtn()
+    let backgroundImageView = UIImageView()
 
         override func viewDidLoad() {
+            setBackground() 
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
             
             
             //Configure the button
             button = dropDownBtn.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-            button.setTitle("Choose Class", for: .normal)
+            button.setTitle("Select Class", for: .normal)
             button.translatesAutoresizingMaskIntoConstraints = false
             
             //Add Button to the View Controller
@@ -38,6 +40,20 @@ class ShantalViewController: UIViewController {
             button.dropView.dropDownOptions = ["Intro to Programming", "Data Structures & Algorithm", "Computer Architecture", "Information Assurance", "Software Engineering", "Probability & Statistics"]
         }
 
+    
+    
+    func setBackground() {
+           view.addSubview(backgroundImageView)
+           backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+           backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+           backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+           backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+           backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+
+           backgroundImageView.image = UIImage (named: "background4")
+
+           view.sendSubviewToBack(backgroundImageView)
+       }
         override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
             // Dispose of any resources that can be recreated.
