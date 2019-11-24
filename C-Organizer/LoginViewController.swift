@@ -8,14 +8,25 @@
 
 import UIKit
 
+var nameText = ""
+
 class LoginViewController: UIViewController {
     let backgroundImageView = UIImageView()
+    
 
+    @IBOutlet var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setBackground()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func done(_ sender: Any) {
+        nameText = textField.text!
+        performSegue(withIdentifier: "name2", sender: self)
+        
     }
     
     func setBackground() {

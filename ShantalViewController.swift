@@ -10,10 +10,14 @@ import UIKit
 
 class ShantalViewController: UIViewController {
     
+    @IBOutlet var nameLabel: UILabel!
+    
+    
     var button = dropDownBtn()
     let backgroundImageView = UIImageView()
 
         override func viewDidLoad() {
+            nameLabel.text = "Hey, " + nameText
             setBackground() 
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
@@ -29,9 +33,11 @@ class ShantalViewController: UIViewController {
             
             //button Constraints
             button.bottomAnchor.constraint(equalTo: self.view.topAnchor, constant: 240).isActive = true
-            button.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30).isActive = true
-            //button.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 20).isActive = true
-            //button.centerXAnchor.constraint(equalTo: self.view.leftXAnchor).isActive = true
+
+            button.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0).isActive = true
+
+            button.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 20).isActive = true
+//            button.centerXAnchor.constraint(equalTo: self.view.leftXAnchor).isActive = true
             button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
             button.widthAnchor.constraint(equalToConstant: 250).isActive = true
             button.heightAnchor.constraint(equalToConstant: 40).isActive = true

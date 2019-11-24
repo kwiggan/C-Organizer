@@ -16,9 +16,28 @@ class AllNamesViewController: UIViewController {
         Student("Keneisha Wiggan"),
         Student("Amarachi Kalu-Onuma"),
         Student("Ikenna Brown"),
-        Student("Ruby Birchiet")
+        Student("Annakay Candice Evea"),
+        Student("Ruby Birchiet"),
+        Student ("Kamari Fransis"),
+        Student ("Donald Green"),
+        Student ("DeVonte Brown"),
+        Student ("Anna Swanier"),
+        Student ("Desmon Harris"),
+        Student ("Isaiah Freeman"),
+        Student ("Devon James"),
+        Student ("Adarsh Greene"),
+        Student ("Raquel Boulware"),
+        Student ("Hayley Bailey"),
+        Student ("DeAntre Robinson"),
+        Student ("Tyler Brown"),
+        Student ("Khyree Shaw"),
+        Student ("Jasmine Mackenzie"),
+        Student ("Mackenzie Brown"),
+        Student ("Michael Harper"),
+        Student ("Sagar Ghmire"),
+        Student ("Stephone Jeffcote")
+        
     ]
-    
     
 //    for char in students {
 //
@@ -27,7 +46,7 @@ class AllNamesViewController: UIViewController {
     @IBOutlet weak var averageLabel: UILabel!
     let backgroundImageView = UIImageView()
     
-    var sum = 0
+    var sum = 0.0
     var segue = ""
     
 //    let myString = " Hello World ! "
@@ -50,13 +69,14 @@ class AllNamesViewController: UIViewController {
                         student.isLongestName = true
                     }
                 }
+                studentsTable.reloadData()
             }
             case "total":
                  topicLabel.text = "Total Character in Names"
                 for student in students {
                     //counting char without white spaces
                     let charCount = (String(student.name.filter {!" ".contains($0)})).count
-                    sum = charCount
+                    sum = Double(charCount)
                     print("The total character in \(student.name) is \(sum)")
                 }
             
@@ -65,9 +85,9 @@ class AllNamesViewController: UIViewController {
             averageLabel.isHidden = false
             for student in students {
                 let charCount = student.name.count
-            sum += charCount
+            sum += Double(charCount)
             }
-            let average:Double = Double(sum/students.count)
+            let average:Double = sum / Double(students.count)
             averageLabel.text = "Average: \(average)"
             
         default:
@@ -106,7 +126,7 @@ extension AllNamesViewController: UITableViewDelegate, UITableViewDataSource{
         }
         
         if segue == "total" {
-            cell.totalChars.text = "Total char: \((String(students[indexPath.row].name.filter {!" ".contains($0)})).count)"
+            cell.totalChars.text = "Total char: \(students[indexPath.row].length)"
         }else {
             cell.totalChars.isHidden = true
         }
@@ -129,7 +149,7 @@ class Student {
     
     init(_ name: String){
         self.name = name
-        self.length = name.count
+        self.length = (String(name.filter {!" ".contains($0)})).count
     }
 }
 
