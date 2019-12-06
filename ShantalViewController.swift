@@ -18,7 +18,7 @@ class ShantalViewController: UIViewController {
 
         override func viewDidLoad() {
             nameLabel.text = "Hey, " + nameText
-            setBackground() 
+            //setBackground() 
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
             

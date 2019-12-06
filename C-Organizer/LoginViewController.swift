@@ -13,7 +13,7 @@ var nameText = ""
 extension UITextField {
     
     func setPadding() {
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: self.frame.height))
+        _ = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: self.frame.height))
         self.leftViewMode = .always
         
     }
@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setBackground()
+        //setBackground()
         textField.setPadding()
         textField.setBottomBorder()
         emailTextField.setBottomBorder()
@@ -55,7 +55,7 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: "name2", sender: self)
         
     }
-    
+   /**
     func setBackground() {
            view.addSubview(backgroundImageView)
            backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -64,11 +64,11 @@ class LoginViewController: UIViewController {
            backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
            backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
 
-          // backgroundImageView.image = UIImage (named: "background4")
+           backgroundImageView.image = UIImage (named: "background4")
 
            view.sendSubviewToBack(backgroundImageView)
        }
-    
+    */
 
 
 }
