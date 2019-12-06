@@ -12,10 +12,19 @@ class MyClassViewController: UIViewController {
     
         let backgroundImageView = UIImageView()
 
+    @IBOutlet weak var longestNameButton: UIButton!
+    @IBOutlet weak var AverageButton: UIButton!
+    @IBOutlet weak var TotalCharacterButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setBackground() 
         // Do any additional setup after loading the view.
+        longestNameButton.layer.cornerRadius = longestNameButton.frame.height / 6
+         AverageButton.layer.cornerRadius = AverageButton.frame.height / 6
+         TotalCharacterButton.layer.cornerRadius = TotalCharacterButton.frame.height / 6
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

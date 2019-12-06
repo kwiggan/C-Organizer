@@ -95,28 +95,6 @@
                                     <segue destination="8h1-9U-8DQ" kind="show" identifier="seeall" id="gog-uf-u4w"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dau-sz-yUN">
-                                <rect key="frame" x="66" y="274" width="283" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="Get Longest Name">
-                                    <color key="titleColor" red="0.92294770079999999" green="0.49198503869999999" blue="0.01713972527" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="8h1-9U-8DQ" kind="show" identifier="long" id="Zjs-fK-MlK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3g-PR-uff">
-                                <rect key="frame" x="66" y="453" width="283" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="Get Average">
-                                    <color key="titleColor" red="0.92294770079999999" green="0.49198503869999999" blue="0.01713972527" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="8h1-9U-8DQ" kind="show" identifier="average" id="Joy-CN-QdH"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get the longest name of your students in class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exf-c4-R3g">
                                 <rect key="frame" x="30" y="228" width="355" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -156,6 +134,28 @@
                                     <segue destination="8h1-9U-8DQ" kind="show" identifier="total" id="pgo-Lg-Aof"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dau-sz-yUN">
+                                <rect key="frame" x="66" y="276" width="283" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Get Longest Name">
+                                    <color key="titleColor" red="0.92294770079999999" green="0.49198503869999999" blue="0.01713972527" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8h1-9U-8DQ" kind="show" identifier="long" id="Zjs-fK-MlK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3g-PR-uff">
+                                <rect key="frame" x="66" y="455" width="283" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Get Average">
+                                    <color key="titleColor" red="0.92294770079999999" green="0.49198503869999999" blue="0.01713972527" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8h1-9U-8DQ" kind="show" identifier="average" id="Joy-CN-QdH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MMM-13-3Kk"/>
@@ -163,10 +163,15 @@
                     <tabBarItem key="tabBarItem" title="CLASS" image="iconfinder_book_2639779-2" id="d2o-WW-5jl">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="AverageButton" destination="k3g-PR-uff" id="cSY-8i-cIi"/>
+                        <outlet property="TotalCharacterButton" destination="vnb-bh-EdZ" id="42M-1H-FDF"/>
+                        <outlet property="longestNameButton" destination="Dau-sz-yUN" id="qWK-CE-AwB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IST-De-zMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502.89855072463774" y="413.83928571428572"/>
+            <point key="canvasLocation" x="503" y="573"/>
         </scene>
         <!--All Names View Controller-->
         <scene sceneID="ffj-Vd-A58">
@@ -251,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOJ-3h-bHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366.6666666666667" y="348.88392857142856"/>
+            <point key="canvasLocation" x="1768" y="573"/>
         </scene>
         <!--PROFILE-->
         <scene sceneID="l8X-oe-Ldu">
@@ -309,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A6W-QN-NWL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502.89855072463774" y="1088.1696428571429"/>
+            <point key="canvasLocation" x="-407" y="592"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="xP0-nY-03n">
