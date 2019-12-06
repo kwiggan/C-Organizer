@@ -13,15 +13,17 @@ class MyClassViewController: UIViewController {
         let backgroundImageView = UIImageView()
 
     @IBOutlet weak var longestNameButton: UIButton!
-    @IBOutlet weak var AverageButton: UIButton!
+    @IBOutlet weak var averageButton: UIButton!
     @IBOutlet weak var TotalCharacterButton: UIButton!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setBackground() 
+        //setBackground() 
         // Do any additional setup after loading the view.
         longestNameButton.layer.cornerRadius = longestNameButton.frame.height / 6
-         AverageButton.layer.cornerRadius = AverageButton.frame.height / 6
+         averageButton.layer.cornerRadius = averageButton.frame.height / 6
          TotalCharacterButton.layer.cornerRadius = TotalCharacterButton.frame.height / 6
         
         

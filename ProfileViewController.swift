@@ -61,7 +61,7 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         pImage.imageProfile()
-        setBackground()
+        //setBackground()
         
         if (UserDefaults.standard.object(forKey: "test") as? NSData) != nil {
             let photo = UserDefaults.standard.object(forKey: "test") as! NSData

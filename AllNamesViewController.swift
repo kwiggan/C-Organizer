@@ -43,6 +43,7 @@ class AllNamesViewController: UIViewController {
 //
 //    }
    // let test = Array(sNames.filter { !" \n\t\r".contains($0) })
+ 
     @IBOutlet weak var averageLabel: UILabel!
     let backgroundImageView = UIImageView()
     
@@ -57,7 +58,7 @@ class AllNamesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setBackground()
+        //setBackground()
         averageLabel.isHidden = true
         
         switch segue{
