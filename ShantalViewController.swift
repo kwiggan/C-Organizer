@@ -17,7 +17,7 @@ class ShantalViewController: UIViewController {
     let backgroundImageView = UIImageView()
 
         override func viewDidLoad() {
-            nameLabel.text = "Hey, " + nameText
+            nameLabel.text = "Hey " + nameText
             //setBackground() 
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
@@ -85,7 +85,7 @@ class ShantalViewController: UIViewController {
         override init(frame: CGRect) {
             super.init(frame: frame)
             
-            self.backgroundColor = UIColor.darkGray
+            self.backgroundColor = UIColor.black
             
             dropView = dropDownView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: 0))
             dropView.delegate = self

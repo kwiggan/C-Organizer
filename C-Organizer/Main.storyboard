@@ -35,10 +35,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iA-fP-tvD">
-                                        <rect key="frame" x="8" y="77" width="97" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iA-fP-tvD">
+                                        <rect key="frame" x="8" y="69" width="27" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Back">
+                                        <state key="normal" image="back">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
@@ -67,6 +67,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujw-VG-yDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="692.75362318840587" y="-228.34821428571428"/>
+        </scene>
+        <!--AmarachiStoryboard-->
+        <scene sceneID="fxh-Ak-0ga">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AmarachiStoryboard" id="c2E-Vo-JgG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhh-if-0f2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="1079"/>
         </scene>
         <!--CLASS-->
         <scene sceneID="chy-64-2w5">
@@ -188,21 +196,6 @@
             </objects>
             <point key="canvasLocation" x="626" y="572"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="4Di-Te-IXT">
-            <objects>
-                <viewController id="Wg4-nB-vvg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u4J-7b-RPg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="ZPF-lG-joX"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9WP-7f-ByT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="625" y="1432"/>
-        </scene>
         <!--All Names View Controller-->
         <scene sceneID="ffj-Vd-A58">
             <objects>
@@ -269,11 +262,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPs-od-f5j">
-                                        <rect key="frame" x="8" y="69" width="102" height="38"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPs-od-f5j">
+                                        <rect key="frame" x="8" y="69" width="27" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                        <state key="normal" title="&lt; Back">
+                                        <state key="normal" image="back">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -313,7 +305,7 @@
         <!--PROFILE-->
         <scene sceneID="l8X-oe-Ldu">
             <objects>
-                <viewController id="yob-YF-ERe" customClass="ProfileViewController" customModule="C_Organizer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PROFILE" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yob-YF-ERe" customClass="ProfileViewController" customModule="C_Organizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j7A-HE-sdt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -357,6 +349,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f91-I7-phA">
+                                        <rect key="frame" x="332" y="42" width="82" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="document"/>
+                                        <connections>
+                                            <segue destination="c2E-Vo-JgG" kind="show" id="w33-O0-lL7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.77778154610000005" green="0.54748815299999998" blue="0.26265406610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
@@ -485,7 +485,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="GFK-Y9-A5F">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cav-VQ-4iA" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Tab Bar" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cav-VQ-4iA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="UwZ-Rq-hcE"/>
                     <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="IvC-RS-GJK">
@@ -508,7 +508,9 @@
     </scenes>
     <resources>
         <image name="7516ed00-e52d-4ffa-a25f-48e70a45bc81_200x200" width="150" height="150"/>
+        <image name="back" width="32" height="32"/>
         <image name="class" width="500" height="375"/>
+        <image name="document" width="48" height="48"/>
         <image name="iconfinder_book_2639779-2" width="32" height="32"/>
         <image name="iconfinder_home_2639835" width="32" height="32"/>
         <image name="iconfinder_user_male_2639944" width="32" height="32"/>
