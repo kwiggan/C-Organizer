@@ -15,7 +15,7 @@ class AllNamesViewController: UIViewController {
         Student("Shantal Ewell"),
         Student("Keneisha Wiggan"),
         Student("Amarachi Kalu-Onuma"),
-        Student("Ikenna Brown"),
+        Student("Ikenna Ngwu"),
         Student("Annakay Candice Evea"),
         Student("Ruby Birchiet"),
         Student ("Kamari Fransis"),
@@ -55,6 +55,16 @@ class AllNamesViewController: UIViewController {
     @IBOutlet weak var studentsTable: UITableView!
     @IBOutlet weak var topicLabel: UILabel!
     
+    //adding checkmark to table-Shantal new update
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCell.AccessoryType.checkmark {
+            tableView.cellForRow(at:indexPath)?.accessoryType = UITableViewCell.AccessoryType.none
+            
+    }else{
+        tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark
+    }
+    
+}
     override func viewDidLoad() {
         super.viewDidLoad()
         setBackground()
@@ -89,7 +99,7 @@ class AllNamesViewController: UIViewController {
             }
             let average:Double = sum / Double(students.count)
             averageLabel.text = "Average: \(average)"
-            
+       
         default:
             break
         }
@@ -133,6 +143,7 @@ extension AllNamesViewController: UITableViewDelegate, UITableViewDataSource{
         
         return cell
     }
+    
 }
 
 class Students: UITableViewCell {
