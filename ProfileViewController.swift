@@ -30,8 +30,7 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
                     //After it is compiled
                 }
     }
-    @IBOutlet weak var buttonProfile: UITabBarItem!
-    
+   
      
      func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             let defaults = UserDefaults.standard
