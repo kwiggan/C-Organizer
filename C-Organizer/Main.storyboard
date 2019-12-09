@@ -517,9 +517,9 @@
         <image name="person.fill" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sfQ-TY-I9E"/>
+        <segue reference="kqW-A9-ytM"/>
         <segue reference="gog-uf-u4w"/>
-        <segue reference="Q95-OX-bDt"/>
+        <segue reference="tXH-y1-no9"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
