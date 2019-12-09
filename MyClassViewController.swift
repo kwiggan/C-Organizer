@@ -8,6 +8,34 @@
 
 import UIKit
 
+var students = [
+    Student("Shantal Ewell"),
+    Student("Keneisha Wiggan"),
+    Student("Amarachi Kalu-Onuma"),
+    Student("Ikenna Ngwu"),
+    Student("Annakay Candice Evea"),
+    Student("Ruby Birchiet"),
+    Student ("Kamari Fransis"),
+    Student ("Donald Green"),
+    Student ("DeVonte Brown"),
+    Student ("Anna Swanier"),
+    Student ("Desmon Harris"),
+    Student ("Isaiah Freeman"),
+    Student ("Devon James"),
+    Student ("Adarsh Greene"),
+    Student ("Raquel Boulware"),
+    Student ("Hayley Bailey"),
+    Student ("DeAntre Robinson"),
+    Student ("Tyler Brown"),
+    Student ("Khyree Shaw"),
+    Student ("Jasmine Mackenzie"),
+    Student ("Mackenzie Brown"),
+    Student ("Michael Harper"),
+    Student ("Sagar Ghmire"),
+    Student ("Stephone Jeffcote")
+    
+]
+
 class MyClassViewController: UIViewController {
     
         let backgroundImageView = UIImageView()

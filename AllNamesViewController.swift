@@ -11,33 +11,7 @@ import UIKit
 class AllNamesViewController: UIViewController {
 
 //Struc to hold all students names
-    var students = [
-        Student("Shantal Ewell"),
-        Student("Keneisha Wiggan"),
-        Student("Amarachi Kalu-Onuma"),
-        Student("Ikenna Brown"),
-        Student("Annakay Candice Evea"),
-        Student("Ruby Birchiet"),
-        Student ("Kamari Fransis"),
-        Student ("Donald Green"),
-        Student ("DeVonte Brown"),
-        Student ("Anna Swanier"),
-        Student ("Desmon Harris"),
-        Student ("Isaiah Freeman"),
-        Student ("Devon James"),
-        Student ("Adarsh Greene"),
-        Student ("Raquel Boulware"),
-        Student ("Hayley Bailey"),
-        Student ("DeAntre Robinson"),
-        Student ("Tyler Brown"),
-        Student ("Khyree Shaw"),
-        Student ("Jasmine Mackenzie"),
-        Student ("Mackenzie Brown"),
-        Student ("Michael Harper"),
-        Student ("Sagar Ghmire"),
-        Student ("Stephone Jeffcote")
-        
-    ]
+    var showGrade = false
     
 //    for char in students {
 //
@@ -57,7 +31,6 @@ class AllNamesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setBackground()
         averageLabel.isHidden = true
         
         switch segue{
@@ -90,26 +63,15 @@ class AllNamesViewController: UIViewController {
             let average:Double = sum / Double(students.count)
             averageLabel.text = "Average: \(average)"
             
+        case "grade":
+            topicLabel.text = "Add student grade"
+            showGrade = true
+            
         default:
             break
         }
         // Do any additional setup after loading the view.
     }
-    
-    
-    func setBackground() {
-           view.addSubview(backgroundImageView)
-           backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
-           backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-           backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-           backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-           backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-
-           backgroundImageView.image = UIImage (named: "background4")
-
-           view.sendSubviewToBack(backgroundImageView)
-       }
-
 }
 
 extension AllNamesViewController: UITableViewDelegate, UITableViewDataSource{
@@ -119,6 +81,7 @@ extension AllNamesViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! Students
+        cell.index = indexPath.row
         cell.name.text = students[indexPath.row].name
         
         if students[indexPath.row].isLongestName {
@@ -130,27 +93,41 @@ extension AllNamesViewController: UITableViewDelegate, UITableViewDataSource{
         }else {
             cell.totalChars.isHidden = true
         }
+        if showGrade {
+            cell.grade.isHidden = false
+            cell.grade.text = students[indexPath.row].grade
+        }
         
         return cell
     }
 }
 
-class Students: UITableViewCell {
+class Students: UITableViewCell, UITextFieldDelegate {
     
     @IBOutlet weak var background: UIView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var totalChars: UILabel!
+    @IBOutlet weak var grade: UITextField!
+    var index: Int?
+    
+    override func awakeFromNib() {
+        grade.isHidden = true
+        grade.delegate = self
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        students[index!].grade = textField.text!
+    }
 }
 
 class Student {
     var name: String
     var length: Int
     var isLongestName = false
+    var grade = ""
     
     init(_ name: String){
         self.name = name
         self.length = (String(name.filter {!" ".contains($0)})).count
     }
 }
-
-

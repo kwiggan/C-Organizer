@@ -13,6 +13,8 @@
 		14DD824B2386FFBA00B96080 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD824A2386FFBA00B96080 /* ProfileViewController.swift */; };
 		14DD824D2387024200B96080 /* imageProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD824C2387024200B96080 /* imageProfile.swift */; };
 		A2E9CDEC2379CBF200A7340F /* AmarachiStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E9CDEB2379CBF200A7340F /* AmarachiStoryboard.storyboard */; };
+		B4D6FDC3239AE8D100549B9F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D6FDC2239AE8D100549B9F /* Storyboard.storyboard */; };
+		B4D6FDC5239AEC4F00549B9F /* ikenna.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D6FDC4239AEC4F00549B9F /* ikenna.swift */; };
 		C374C9202383903300BF2C3F /* AllNamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374C91F2383903300BF2C3F /* AllNamesViewController.swift */; };
 		C374C9222383983A00BF2C3F /* MyClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374C9212383983A00BF2C3F /* MyClassViewController.swift */; };
 		CFBA9121237309A300A41058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBA9120237309A300A41058 /* AppDelegate.swift */; };
@@ -30,6 +32,8 @@
 		14DD824A2386FFBA00B96080 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		14DD824C2387024200B96080 /* imageProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageProfile.swift; sourceTree = "<group>"; };
 		A2E9CDEB2379CBF200A7340F /* AmarachiStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AmarachiStoryboard.storyboard; sourceTree = "<group>"; };
+		B4D6FDC2239AE8D100549B9F /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		B4D6FDC4239AEC4F00549B9F /* ikenna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikenna.swift; sourceTree = "<group>"; };
 		C374C91F2383903300BF2C3F /* AllNamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNamesViewController.swift; sourceTree = "<group>"; };
 		C374C9212383983A00BF2C3F /* MyClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassViewController.swift; sourceTree = "<group>"; };
 		CFBA911D237309A300A41058 /* C-Organizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C-Organizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,11 +82,13 @@
 			children = (
 				CFBA9120237309A300A41058 /* AppDelegate.swift */,
 				CFBA9122237309A300A41058 /* ViewController.swift */,
+				B4D6FDC4239AEC4F00549B9F /* ikenna.swift */,
 				CFBA9124237309A300A41058 /* Main1.storyboard */,
 				1448B1D82387B064000933A7 /* LoginViewController.swift */,
 				A2E9CDEB2379CBF200A7340F /* AmarachiStoryboard.storyboard */,
 				14A5531C2379D461002B7F42 /* Main.storyboard */,
 				14DD824C2387024200B96080 /* imageProfile.swift */,
+				B4D6FDC2239AE8D100549B9F /* Storyboard.storyboard */,
 				CFBA912A237309A500A41058 /* Assets.xcassets */,
 				CFBA912C237309A500A41058 /* LaunchScreen.storyboard */,
 				CFBA912F237309A500A41058 /* Info.plist */,
@@ -154,6 +160,7 @@
 				CFBA9126237309A300A41058 /* Main1.storyboard in Resources */,
 				A2E9CDEC2379CBF200A7340F /* AmarachiStoryboard.storyboard in Resources */,
 				14A5531D2379D461002B7F42 /* Main.storyboard in Resources */,
+				B4D6FDC3239AE8D100549B9F /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +176,7 @@
 				CFBA9129237309A300A41058 /* C_Organizer.xcdatamodeld in Sources */,
 				C374C9202383903300BF2C3F /* AllNamesViewController.swift in Sources */,
 				C374C9222383983A00BF2C3F /* MyClassViewController.swift in Sources */,
+				B4D6FDC5239AEC4F00549B9F /* ikenna.swift in Sources */,
 				14DD824B2386FFBA00B96080 /* ProfileViewController.swift in Sources */,
 				14A55321237A595C002B7F42 /* ShantalViewController.swift in Sources */,
 				CFBA9121237309A300A41058 /* AppDelegate.swift in Sources */,
