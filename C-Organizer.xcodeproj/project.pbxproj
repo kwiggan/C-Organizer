@@ -12,6 +12,7 @@
 		14A55321237A595C002B7F42 /* ShantalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A55320237A595C002B7F42 /* ShantalViewController.swift */; };
 		14DD824B2386FFBA00B96080 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD824A2386FFBA00B96080 /* ProfileViewController.swift */; };
 		14DD824D2387024200B96080 /* imageProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD824C2387024200B96080 /* imageProfile.swift */; };
+		A25B3EB3239EA26A008BD172 /* AllStudentNames.txt in Resources */ = {isa = PBXBuildFile; fileRef = A25B3EB2239EA26A008BD172 /* AllStudentNames.txt */; };
 		A2E9CDEC2379CBF200A7340F /* AmarachiStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E9CDEB2379CBF200A7340F /* AmarachiStoryboard.storyboard */; };
 		A2EE1794239B141100863CCC /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE1793239B141100863CCC /* TodoCell.swift */; };
 		A2EE1796239B14CD00863CCC /* ToDoAmaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE1795239B14CD00863CCC /* ToDoAmaViewController.swift */; };
@@ -31,6 +32,7 @@
 		14A55320237A595C002B7F42 /* ShantalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShantalViewController.swift; sourceTree = "<group>"; };
 		14DD824A2386FFBA00B96080 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		14DD824C2387024200B96080 /* imageProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageProfile.swift; sourceTree = "<group>"; };
+		A25B3EB2239EA26A008BD172 /* AllStudentNames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AllStudentNames.txt; sourceTree = "<group>"; };
 		A2E9CDEB2379CBF200A7340F /* AmarachiStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AmarachiStoryboard.storyboard; sourceTree = "<group>"; };
 		A2EE1793239B141100863CCC /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 		A2EE1795239B14CD00863CCC /* ToDoAmaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAmaViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				14DD824A2386FFBA00B96080 /* ProfileViewController.swift */,
 				C374C9212383983A00BF2C3F /* MyClassViewController.swift */,
 				14A55320237A595C002B7F42 /* ShantalViewController.swift */,
+				A25B3EB2239EA26A008BD172 /* AllStudentNames.txt */,
 				CFBA911F237309A300A41058 /* C-Organizer */,
 				CFBA911E237309A300A41058 /* Products */,
 			);
@@ -158,6 +161,7 @@
 				CFBA912E237309A500A41058 /* LaunchScreen.storyboard in Resources */,
 				CFBA912B237309A500A41058 /* Assets.xcassets in Resources */,
 				CFBA9126237309A300A41058 /* Main1.storyboard in Resources */,
+				A25B3EB3239EA26A008BD172 /* AllStudentNames.txt in Resources */,
 				A2E9CDEC2379CBF200A7340F /* AmarachiStoryboard.storyboard in Resources */,
 				14A5531D2379D461002B7F42 /* Main.storyboard in Resources */,
 			);
